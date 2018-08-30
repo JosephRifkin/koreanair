@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://github.com/histdev/koreanair/raw/master/binary/ios/koreanair-test.ipa</string>
+					<string>https://github.com/histdev/koreanair/raw/test/menuicon/binary/ios/koreanair-test.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
