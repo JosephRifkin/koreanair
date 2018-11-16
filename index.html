@@ -4,6 +4,21 @@
   <title>Korean Air Mobile App download site</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+ 
+    if (varUA.match('android') != null) { 
+      //안드로이드 일때 처리
+      window.location.href = "android.html";
+    } else if (varUA.indexOf("iphone")>-1||varUA.indexOf("ipad")>-1||varUA.indexOf("ipod")>-1) { 
+        //IOS 일때 처리
+      window.location.href = "android.html";
+    } else {
+        //아이폰, 안드로이드 외 처리
+    }
+
+  </script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,42 +37,11 @@
   <div class="row">
     <div class="col-sm-6">
       <h3>iOS</h3>
-      <p>Requires iOS 8 or later</p>
-      <ul>
-        <li>PUSH 휴머스온 + FCM(로그인/아웃, 업데이트)</li>
-        <li>OCR 연권인식 안내 팝업 추가</li>
-        <li>켈린더 일정등록</li>
-        <li>로그인/로그아웃 문구 변경오류 수정</li>
-        <li>5.2.9 Release 버전 머지 (생체인식 자동로그인 ON/OFF 설정)</li>
-      </ul>
-      <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/histdev/koreanair/test/push/binary/ios/koreanair-test.plist" class="btn btn-info" role="button">Download</a>
+      <a href="ios.html">Move to iOS Download Page</a>
     </div>
     <div class="col-sm-6">
-      <h3>iOS</h3>
-      <p>Requires iOS 8 or later</p>
-      <ul>
-        <li>모의해킹 테스트</li>
-      </ul>
-      <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/histdev/koreanair/test/hacking/binary/ios/koreanair-test.plist" class="btn btn-info" role="button">Download</a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-6">
-      <h3>iOS</h3>
-      <p>Requires iOS 8 or later</p>
-      <ul>
-        <li>로그인 테스트</li>
-      </ul>
-      <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/histdev/koreanair/test/login/binary/ios/koreanair-test.plist" class="btn btn-info" role="button">Download</a>
-    </div>
-    <div class="col-sm-6">
-      <h3>iOS</h3>
-      <p>Requires iOS 8 or later</p>
-      <ul>
-        <li>Safari 개발자용 </li>
-      </ul>
-      <a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/histdev/koreanair/test/safari/binary/ios/koreanair-test.plist" class="btn btn-info" role="button">Download</a>
+      <h3>Android</h3>
+      <a href="android.html">Move to Android Download Page</a>
     </div>
   </div>
 
